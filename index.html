@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Class Admission Form</title>
+    <link rel="stylesheet" href="./index.css">
+<script src="./script.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>Yoga Class Admission Form</h1>
+        <form id="admissionForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+
+            <label for="selectedBatch">Choose Batch:</label>
+            <select id="selectedBatch" required>
+                <option value="">Select Batch</option>
+                <option value="6-7AM">6-7AM</option>
+                <option value="7-8AM">7-8AM</option>
+                <option value="8-9AM">8-9AM</option>
+                <option value="5-6PM">5-6PM</option>
+            </select>
+
+            <label for="fees">Fees Amount (Rs):</label>
+            <input type="number" id="fees" required>
+
+            <button type="button" onclick="submitForm()">Enroll</button>
+        </form>
+
+        <div id="response" class="response"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
